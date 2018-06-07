@@ -57,7 +57,7 @@ public class LoginScreen extends Application{
         // Create boxes
         HBox emailBox = new HBox();
         emailBox.setAlignment(Pos.CENTER);
-        emailBox.setPadding(new Insets(0,0,100,0));
+        emailBox.setPadding(new Insets(0,0,100,20));
         
         HBox pswBox = new HBox();
         pswBox.setAlignment(Pos.CENTER);
@@ -74,6 +74,7 @@ public class LoginScreen extends Application{
         // Set pane
         pane.getChildren().addAll(emailBox, pswBox, btnBox);
         
+        // Ctreate Scene
         Scene scene = new Scene(pane, 400, 200);
         window.setScene(scene);
         window.show();
